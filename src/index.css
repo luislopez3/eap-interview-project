@@ -109,7 +109,37 @@ code {
     border-radius: 5px;
     color: black !important;
   }
-
+  /* Desktop - Styles for Listings Section */
+  .listings-container {
+    margin: auto;
+    width: 75%;
+    height: 75vh;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+  }
+  .listings-title {
+    margin: 0 0 10px 0;
+    color: black !important;
+    text-align: center;
+  }
+  .listings-sub-title {
+    margin: 0 0 10px 0;
+    color: black !important;
+    text-align: center;
+  }
+  .listings-box {
+    margin: auto;
+    width: 90%;
+    height: 55vh;
+    display: block;
+    background-color: white;
+  }
+  .listings-box img {
+    width: 100%;
+    height: inherit;
+  }
   /* Desktop - Repeated Classes & Styles */
   .title-text {
     color: white;

@@ -51,6 +51,7 @@ const data = {
     "settingsAboutBtnTxt": "Meet Our Team",
     "settingsAboutBtnLink": "/my-team",
     "settingsMediaAboutUsImage": "https://files.easyagentpro.com/dev/images/default.jpg",
+    "settingsIdxPlaceholderImage": "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg",
   
     "mainBackgroundVideo": "FLRoPjjlT7k",
     "settingsMediaPrimaryImage": "https://files.easyagentpro.com/dev/images/default.jpg",
