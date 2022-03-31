@@ -49,4 +49,34 @@ code {
     left: 75%;
     transform: translate(-50%, 50%);
   }
+  .search-bar {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-bar input {
+    text-align: center;
+    width: 85%;
+    height: 60px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .search-bar button {
+    margin: 10px;
+    width: 15%;
+    height: 65px;
+    font-size: 23px;
+    font-weight: 600;
+    background: white;
+    color: grey;
+    border: 1px solid grey;
+    transition: 0.3s ease all;
+  }
+  .search-bar button:hover {
+    background: grey;
+    color: white;
+    transition: 0.3s ease all;
+    cursor: pointer;
+  }
 }
