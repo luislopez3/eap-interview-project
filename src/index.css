@@ -23,24 +23,6 @@ code {
     height: 80vh;
     position: relative;
   }
-  .hero-container h1 {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, 50%);
-    color: white;
-    font-weight: 800;
-    font-size: 45px;
-  }
-  .hero-container h2 {
-    position: absolute;
-    top: 19%;
-    left: 20%;
-    transform: translate(-50%, 50%);
-    color: white;
-    font-weight: 800;
-    font-size: 35px;
-  }
   .hero-video {
     width: 560px;
     height: 315px;
@@ -49,6 +31,7 @@ code {
     left: 75%;
     transform: translate(-50%, 50%);
   }
+  /* Desktop - Styles for Search Bar Section */
   .search-bar {
     margin-left: 10px;
     display: flex;
@@ -62,7 +45,28 @@ code {
     font-size: 23px;
     font-weight: 500;
   }
-  .search-bar button {
+  /* Desktop - Styles for Blogs Section */
+
+  /* Desktop - Repeated Classes & Styles */
+  .title-text {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+  }
+  .sub-title-text {
+    position: absolute;
+    top: 19%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-weight: 800;
+    font-size: 35px;
+  }
+  .lrg-white-btn {
     margin: 10px;
     width: 15%;
     height: 65px;
@@ -73,7 +77,7 @@ code {
     border: 1px solid grey;
     transition: 0.3s ease all;
   }
-  .search-bar button:hover {
+  .lrg-white-btn:hover {
     background: grey;
     color: white;
     transition: 0.3s ease all;
