@@ -23,6 +23,18 @@ code {
     height: 80vh;
     position: relative;
   }
+  .hero-title-text {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, 50%);
+  }
+  .hero-sub-title-text {
+    position: absolute;
+    top: 19%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+  }
   .hero-video {
     width: 560px;
     height: 315px;
@@ -49,19 +61,11 @@ code {
 
   /* Desktop - Repeated Classes & Styles */
   .title-text {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, 50%);
     color: white;
     font-weight: 800;
     font-size: 45px;
   }
   .sub-title-text {
-    position: absolute;
-    top: 19%;
-    left: 20%;
-    transform: translate(-50%, 50%);
     color: white;
     font-weight: 800;
     font-size: 35px;
