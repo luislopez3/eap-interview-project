@@ -5,6 +5,7 @@ import Blogs from "./components/Blogs";
 import Listings from "./components/Listings";
 import Form from "./components/Form";
 import Info from "./components/Info";
+import About from "./components/About";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Listings />
       <Form />
       <Info />
+      <About />
       {/* Footer */}
     </>
   );
