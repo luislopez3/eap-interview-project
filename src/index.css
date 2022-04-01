@@ -197,6 +197,37 @@ code {
     left: 50%;
     transform: translate(-50%, 50%);
   }
+  /* Desktop - Styles for Info Component */
+  .info-container {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .info-title {
+    margin: auto;
+    padding: 15px;
+    color: black !important;
+    text-align: center;
+  }
+  .info-image {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+  }
+  .info-text {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .info-btn {
+    width: 55% !important;
+  }
 
   /* Desktop - Repeated Classes & Styles */
   .title-text {

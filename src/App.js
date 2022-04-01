@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar";
 import Blogs from "./components/Blogs";
 import Listings from "./components/Listings";
 import Form from "./components/Form";
+import Info from "./components/Info";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Blogs />
       <Listings />
       <Form />
+      <Info />
       {/* Footer */}
     </>
   );
