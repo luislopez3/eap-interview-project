@@ -110,12 +110,14 @@ code {
   /* Desktop - Styles for Listings Component */
   .listings-container {
     margin: auto;
+    padding: 10px;
     width: 75%;
     height: 75vh;
     display: block;
     align-items: center;
     text-align: center;
     background-color: lightgray;
+    border-radius: 5px;
   }
   .listings-title,
   .listings-sub-title {
@@ -128,11 +130,11 @@ code {
     width: 90%;
     height: 55vh;
     display: block;
-    background-color: white;
   }
   .listings-box img {
     width: 100%;
     height: inherit;
+    border-radius: 5px;
   }
   /* Desktop - Styles for Form Component */
   .form-title,

@@ -9,7 +9,9 @@ export default function Listings() {
       </h3>
       <div className="listings-box">
         <img src={data.settingsIdxPlaceholderImage} alt="Secondary" />
-        {data.settingsIdxShortcode}
+        {/* I wasn't sure how to use the data source below, 
+        so I added this placeholder image. */}
+        {/* {data.settingsIdxShortcode} */}
       </div>
     </div>
   );
