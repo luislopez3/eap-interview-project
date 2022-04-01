@@ -14,7 +14,7 @@ code {
 }
 /* Desktop breakpoint */
 @media only screen and (min-width: 769px) {
-  /* Desktop - Styles for Hero Section */
+  /* Desktop - Styles for Hero Component */
   .hero-container {
     width: 100%;
   }
@@ -43,32 +43,30 @@ code {
     left: 75%;
     transform: translate(-50%, 50%);
   }
-  /* Desktop - Styles for Search Bar Section */
+  /* Desktop - Styles for Search Bar Component */
   .search-bar {
-    margin-left: 10px;
+    margin: 0 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .search-bar input {
+  .search-bar-text {
     text-align: center;
     width: 85%;
-    height: 60px;
+    height: 65px;
     font-size: 23px;
     font-weight: 500;
+    border: 1px solid grey;
+    border-radius: 5px;
   }
-  /* Desktop - Styles for Blogs Section */
+  /* Desktop - Styles for Blogs Component */
   .blogs-container {
     height: 65vh;
     display: block;
   }
-  .blog-title {
+  .blog-title,
+  .blog-sub-title {
     margin: 0 0 10px 0;
-    color: black !important;
-    text-align: center;
-  }
-  .blog-sub {
-    margin: 0 0 15px 0;
     color: black !important;
     text-align: center;
   }
@@ -109,7 +107,7 @@ code {
     border-radius: 5px;
     color: black !important;
   }
-  /* Desktop - Styles for Listings Section */
+  /* Desktop - Styles for Listings Component */
   .listings-container {
     margin: auto;
     width: 75%;
@@ -119,11 +117,7 @@ code {
     text-align: center;
     background-color: lightgray;
   }
-  .listings-title {
-    margin: 0 0 10px 0;
-    color: black !important;
-    text-align: center;
-  }
+  .listings-title,
   .listings-sub-title {
     margin: 0 0 10px 0;
     color: black !important;
@@ -140,6 +134,70 @@ code {
     width: 100%;
     height: inherit;
   }
+  /* Desktop - Styles for Form Component */
+  .form-title,
+  .form-sub-title {
+    margin: 20px 0 10px 0;
+    color: black !important;
+    text-align: center;
+  }
+  .form-container {
+    margin: auto;
+    padding-bottom: 70px;
+    width: 40%;
+  }
+  .form-name {
+    margin: 10px;
+    width: 45%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .form-email {
+    margin: 10px;
+    width: 95%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .form-comments {
+    margin: 10px;
+    width: 95%;
+    height: 150px;
+    font: inherit;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .form-checkbox {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .fieldset-content {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .dropdown-content {
+    margin: 10px;
+    font-size: 20px;
+    width: 240px;
+    height: 40px;
+  }
+  .form-submit-btn {
+    width: 30% !important;
+    color: black !important;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
   /* Desktop - Repeated Classes & Styles */
   .title-text {
     color: white;
@@ -160,6 +218,7 @@ code {
     background: white;
     color: grey;
     border: 1px solid grey;
+    border-radius: 5px;
     transition: 0.3s ease all;
   }
   .lrg-white-btn:hover {

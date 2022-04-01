@@ -4,7 +4,7 @@ export default function Blogs() {
   return (
     <div className="blogs-container">
       <h2 className="blog-title title-text">{data.blogTitle}</h2>
-      <h3 className="blog-sub sub-title-text">{data.blogSubTitle}</h3>
+      <h3 className="blog-sub-title sub-title-text">{data.blogSubTitle}</h3>
       <div className="blog-posts">
         <div className="blog">
           <img
