@@ -51,6 +51,9 @@ const data = {
     "settingsAboutBtnTxt": "Meet Our Team",
     "settingsAboutBtnLink": "/my-team",
     "settingsMediaAboutUsImage": "https://files.easyagentpro.com/dev/images/default.jpg",
+    "testimonialImage_01": "https://images.pexels.com/photos/8293649/pexels-photo-8293649.jpeg",
+
+    // images that I have added for the Listings and Testimonial Slider Componenets
     "settingsIdxPlaceholderImage": "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg",
   
     "mainBackgroundVideo": "FLRoPjjlT7k",

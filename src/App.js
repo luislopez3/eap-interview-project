@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import Info from "./components/Info";
 import About from "./components/About";
 import CallToAction from "./components/CallToAction";
+import TestimonialSlider from "./components/TestimonialSlider";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Info />
       <About />
       <CallToAction />
+      <TestimonialSlider />
       {/* Footer */}
     </>
   );
