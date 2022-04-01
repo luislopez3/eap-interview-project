@@ -6,6 +6,7 @@ import Listings from "./components/Listings";
 import Form from "./components/Form";
 import Info from "./components/Info";
 import About from "./components/About";
+import CallToAction from "./components/CallToAction";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Form />
       <Info />
       <About />
+      <CallToAction />
       {/* Footer */}
     </>
   );

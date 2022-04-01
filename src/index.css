@@ -228,28 +228,41 @@ code {
   .info-btn {
     width: 55% !important;
   }
-  /* Desktop - Repeated Classes & Styles */
+  /* Desktop - Styles for About Component */
   .about-container {
-    width: 75%;
-    margin: auto;
+    width: 60%;
+    display: block;
+    padding-top: 20px;
   }
   .about-title-text {
     color: black !important;
-    width: 50%;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
   }
   .about-text {
-    width: 45%;
+    width: 60%;
     font-size: 20px;
+    margin: auto;
   }
   .about-btn {
+    width: 30% !important;
+    color: black !important;
     position: relative;
-    left: 80%;
-    transform: translate(-100%, -230%);
-    border-radius: 5px;
-    width: 20% !important;
+    left: 75%;
+    transform: translate(80%, -200%);
+  }
+  /* Desktop - Style for Call to Action Component */
+  .cta-container {
+    margin-top: -40px;
+    text-align: center;
+  }
+  .cta-title {
     color: black !important;
   }
-
+  .cta-container h4 {
+    font-size: 20px;
+  }
   /* Desktop - Repeated Classes & Styles */
   .title-text {
     color: white;
