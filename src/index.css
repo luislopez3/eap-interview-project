@@ -13,7 +13,7 @@ code {
     monospace;
 }
 /**************************** Desktop breakpoint ***********************************/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 992px) {
   /* Desktop - Styles for Hero Component */
   .hero-container {
     width: 100%;
@@ -342,21 +342,21 @@ code {
   }
   .hero-title-text {
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 30%;
     transform: translate(-50%, 50%);
   }
   .hero-sub-title-text {
     position: absolute;
-    top: 19%;
-    left: 23%;
+    top: 13%;
+    left: 22%;
     transform: translate(-50%, 50%);
   }
   .hero-video {
     width: 360px;
     height: 215px;
     position: absolute;
-    top: 16%;
+    top: 12%;
     left: 70%;
     transform: translate(-50%, 50%);
   }
@@ -375,7 +375,7 @@ code {
   }
   /* Tablet - Styles for Blogs Component */
   .blogs-container {
-    height: 48vh;
+    height: 37vh;
     display: block;
   }
   .blog-title,
@@ -392,7 +392,7 @@ code {
     justify-content: space-evenly;
   }
   .blog {
-    height: 15vh;
+    height: 12vh;
   }
   .blog-image {
     width: 210px;
@@ -622,7 +622,7 @@ code {
     margin: 15px auto;
   }
   .testimonial-text {
-    min-height: 120px;
+    min-height: 220px;
   }
   .testimonial-name {
     text-align: center;
