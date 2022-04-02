@@ -41,7 +41,7 @@ button:hover {
   transition: 0.3s ease all;
   cursor: pointer;
 }
-input {
+input, textarea {
   border-radius: 5px;
   font-weight: 500;
   font-size: 18px;
@@ -151,4 +151,49 @@ img {
   display: block;
 }
 /* Mobile - Styles for Form Component */
-
+.form-title,
+.form-sub-title {
+  margin: 8px;
+  padding-bottom: 8px;
+}
+.form-container {
+  padding-bottom: 50px;
+  width: 85%;
+}
+.form-name {
+  margin: 10px;
+  width: 45%;
+  height: 50px;
+}
+.form-email {
+  margin: 10px;
+  width: 95%;
+  height: 50px;
+}
+.form-comments {
+  margin: 10px;
+  width: 95%;
+  height: 150px;
+  font: inherit;
+}
+.form-checkbox {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.fieldset-content {
+  margin-left: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.dropdown-content {
+  margin: 10px;
+  font-size: 18px;
+  width: 55%;
+  height: 35px;
+}
+.form-submit-btn {
+  width: 30%;
+  display: block;
+  margin: auto;
+}

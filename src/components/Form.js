@@ -29,10 +29,8 @@ export default function Form() {
 
   return (
     <>
-      <h2 className="form-title title-text">Sign up Form</h2>
-      <h3 className="form-sub-title sub-title-text">
-        Please let me know how I can help!
-      </h3>
+      <h2 className="form-title">Sign up Form</h2>
+      <h3 className="form-sub-title">Please let me know how I can help!</h3>
       <form className="form-container" onSubmit={handleSubmit}>
         <input
           className="form-name"
@@ -157,6 +155,8 @@ export default function Form() {
           <option value="second-home">Second Home</option>
           <option value="vacation-home">Vacation Home</option>
         </select>
+        <br />
+        <br />
         <br />
         <button className="form-submit-btn lrg-white-btn">Submit</button>
       </form>
