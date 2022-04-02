@@ -1,659 +1,153 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Karla", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+main {
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-/**************************** Desktop breakpoint ***********************************/
-@media only screen and (min-width: 992px) {
-  /* Desktop - Styles for Hero Component */
-  .hero-container {
-    width: 100%;
-  }
-  .hero-container img {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-  }
-  .hero-title-text {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, 50%);
-  }
-  .hero-sub-title-text {
-    position: absolute;
-    top: 19%;
-    left: 20%;
-    transform: translate(-50%, 50%);
-  }
-  .hero-video {
-    width: 560px;
-    height: 315px;
-    position: absolute;
-    top: 15%;
-    left: 75%;
-    transform: translate(-50%, 50%);
-  }
-  /* Desktop - Styles for Search Bar Component */
-  .search-bar {
-    margin: 0 0 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .search-bar-text {
-    text-align: center;
-    width: 85%;
-    height: 65px;
-    font-size: 23px;
-    font-weight: 500;
-    border: 1px solid grey;
-    border-radius: 5px;
-  }
-  /* Desktop - Styles for Blogs Component */
-  .blogs-container {
-    height: 65vh;
-    display: block;
-  }
-  .blog-title,
-  .blog-sub-title {
-    margin: 0 0 10px 0;
-    color: black !important;
-    text-align: center;
-  }
-  .blog-posts {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .blog {
-    height: 19vh;
-  }
-  .blog-image {
-    width: 400px;
-    border-radius: 5px;
-    opacity: 0.3;
-    transition: 0.5s ease all;
-  }
-  .blog-image:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition: 0.5s ease all;
-  }
-  .blog-link-text {
-    position: relative;
-    top: -140%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    color: black;
-    font-size: 30px;
-    font-weight: 900;
-  }
-  .blog-btn {
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border-radius: 5px;
-    color: black !important;
-  }
-  /* Desktop - Styles for Listings Component */
-  .listings-container {
-    margin: auto;
-    padding: 10px;
-    width: 75%;
-    height: 75vh;
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-color: lightgray;
-    border-radius: 5px;
-  }
-  .listings-title,
-  .listings-sub-title {
-    margin: 0 0 10px 0;
-    color: black !important;
-    text-align: center;
-  }
-  .listings-box {
-    margin: auto;
-    width: 90%;
-    height: 55vh;
-    display: block;
-  }
-  .listings-box img {
-    width: 100%;
-    height: inherit;
-    border-radius: 5px;
-  }
-  /* Desktop - Styles for Form Component */
-  .form-title,
-  .form-sub-title {
-    margin: 20px 0 10px 0;
-    color: black !important;
-    text-align: center;
-  }
-  .form-container {
-    margin: auto;
-    padding-bottom: 70px;
-    width: 40%;
-  }
-  .form-name {
-    margin: 10px;
-    width: 45%;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-email {
-    margin: 10px;
-    width: 95%;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-comments {
-    margin: 10px;
-    width: 95%;
-    height: 150px;
-    font: inherit;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-checkbox {
-    margin-left: 10px;
-    font-size: 20px;
-  }
-  .fieldset-content {
-    margin-left: 10px;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .dropdown-content {
-    margin: 10px;
-    font-size: 20px;
-    width: 240px;
-    height: 40px;
-  }
-  .form-submit-btn {
-    width: 30% !important;
-    color: black !important;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
-  /* Desktop - Styles for Info Component */
-  .info-container {
-    width: 95%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .info-title {
-    margin: auto;
-    padding: 15px;
-    color: black !important;
-    text-align: center;
-  }
-  .info-image {
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
-  }
-  .info-text {
-    width: 300px;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .info-btn {
-    width: 55% !important;
-  }
-  /* Desktop - Styles for About Component */
-  .about-container {
-    width: 60%;
-    display: block;
-    padding-top: 70px;
-  }
-  .about-title-text {
-    color: black !important;
-    width: 60%;
-    margin: auto;
-    padding: 10px;
-  }
-  .about-text {
-    width: 60%;
-    font-size: 20px;
-    margin: auto;
-  }
-  .about-btn {
-    width: 30% !important;
-    color: black !important;
-    position: relative;
-    left: 75%;
-    transform: translate(80%, -200%);
-  }
-  /* Desktop - Style for Call to Action Component */
-  .cta-container {
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  .cta-title {
-    color: black !important;
-  }
-  .cta-container h4 {
-    font-size: 20px;
-  }
-  .cta-btn {
-    width: 20% !important;
-  }
-  /* Desktop - Style for Testimonial Slider Component */
-  .testimonial-title {
-    color: black !important;
-    text-align: center;
-    padding-top: 40px;
-    margin: 10px;
-  }
-  .testimonial-sub-title {
-    color: black !important;
-    text-align: center;
-    margin: 0;
-  }
-  .testimonial-slider {
-    width: 100%;
-  }
-  .testimonial-card {
-    max-width: 350px;
-    padding: 30px;
-    margin: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  .testimonial-icon img {
-    max-width: 10%;
-  }
-  .testimonial-image img {
-    border-radius: 50%;
-    max-width: 35%;
-    margin: 15px auto;
-  }
-  .testimonial-text {
-    min-height: 70px;
-  }
-  .testimonial-name {
-    text-align: center;
-  }
-  /* Desktop - Repeated Classes & Styles */
-  .title-text {
-    color: white;
-    font-weight: 800;
-    font-size: 45px;
-  }
-  .sub-title-text {
-    color: white;
-    font-weight: 800;
-    font-size: 35px;
-  }
-  .lrg-white-btn {
-    margin: 10px;
-    width: 15%;
-    height: 65px;
-    font-size: 23px;
-    font-weight: 600;
-    background: white;
-    color: grey;
-    border: 1px solid grey;
-    border-radius: 5px;
-    transition: 0.3s ease all;
-  }
-  .lrg-white-btn:hover {
-    background: grey;
-    color: white;
-    transition: 0.3s ease all;
-    cursor: pointer;
-  }
+h2,
+h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 23px;
 }
-/**************************** Tablet breakpoint ***********************************/
-@media only screen and (min-width: 600px) {
-  /* Tablet - Styles for Hero Component */
-  .hero-container img {
-    width: 100%;
-  }
-  .hero-title-text {
-    position: absolute;
-    top: 7%;
-    left: 30%;
-    transform: translate(-50%, 50%);
-  }
-  .hero-sub-title-text {
-    position: absolute;
-    top: 13%;
-    left: 22%;
-    transform: translate(-50%, 50%);
-  }
-  .hero-video {
-    width: 360px;
-    height: 215px;
-    position: absolute;
-    top: 12%;
-    left: 70%;
-    transform: translate(-50%, 50%);
-  }
-  /* Tablet - Styles for Search Bar Component */
-  .search-bar {
-    margin: 0 0 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .search-bar-text {
-    text-align: center;
-    width: 80%;
-    height: 55px;
-    font-size: 20px;
-  }
-  /* Tablet - Styles for Blogs Component */
-  .blogs-container {
-    height: 37vh;
-    display: block;
-  }
-  .blog-title,
-  .blog-sub-title {
-    margin: 0 0 15px 0;
-    color: black !important;
-    text-align: center;
-    font-size: 23px !important;
-  }
-  .blog-posts {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .blog {
-    height: 12vh;
-  }
-  .blog-image {
-    width: 210px;
-    border-radius: 5px;
-    opacity: 1;
-    transition: 0.5s ease all;
-  }
-  .blog-image:hover {
-    opacity: 0.3;
-    cursor: pointer;
-    transition: 0.5s ease all;
-  }
-  .blog-link-text {
-    position: relative;
-    top: -13%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .blog-btn {
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border-radius: 5px;
-    color: black !important;
-    width: 25% !important;
-    font-size: 18px !important;
-  }
-  /* Tablet - Styles for Listings Component */
-  .listings-container {
-    margin: auto;
-    width: 75%;
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-color: lightgray;
-    border-radius: 5px;
-  }
-  .listings-title,
-  .listings-sub-title {
-    margin: 0 0 10px 0;
-    color: black !important;
-    text-align: center;
-    font-size: 20px !important;
-  }
-  .listings-box {
-    margin: auto;
-    width: 90%;
-    height: 35vh;
-    display: block;
-  }
-  .listings-box img {
-    width: 100%;
-    height: 95%;
-    border-radius: 5px;
-  }
-  /* Tablet - Styles for Form Component */
-  .form-title,
-  .form-sub-title {
-    margin: 20px 0 10px 0;
-    color: black !important;
-    text-align: center;
-    font-size: 20px !important;
-  }
-  .form-container {
-    margin: auto;
-    width: 60%;
-  }
-  .form-name {
-    margin: 10px;
-    width: 95%;
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-email {
-    margin: 10px;
-    width: 95%;
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-comments {
-    margin: 10px;
-    width: 95%;
-    height: 150px;
-    font: inherit;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .form-checkbox {
-    margin-left: 10px;
-    font-size: 18px;
-  }
-  .fieldset-content {
-    margin-left: 10px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid grey;
-  }
-  .dropdown-content {
-    margin: 10px;
-    font-size: 18px;
-    width: 240px;
-    height: 40px;
-  }
-  .form-submit-btn {
-    margin-bottom: 30px !important;
-    width: 40% !important;
-    color: black !important;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
-  /* Tablet - Styles for Info Component */
-  .info-container {
-    width: 90%;
-    margin: auto;
-    padding: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .info-title {
-    margin: auto;
-    padding: 10px;
-    color: black !important;
-    text-align: center;
-    font-size: 20px !important;
-  }
-  .info-image {
-    width: 150px;
-    border-radius: 50%;
-    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
-  }
-  .info-text {
-    width: 150px;
-    min-height: 120px;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 15px;
-  }
-  .info-btn {
-    width: 65% !important;
-    font-size: 16px !important;
-  }
-  /* Tablet - Styles for About Component */
-  .about-container {
-    width: 60%;
-    display: block;
-    padding-top: 20px;
-  }
-  .about-title-text {
-    color: black !important;
-    width: 60%;
-    margin: auto;
-    padding: 10px;
-    font-size: 20px !important;
-  }
-  .about-text {
-    width: 60%;
-    font-size: 16px;
-    margin: auto;
-  }
-  .about-btn {
-    width: 40% !important;
-    color: black !important;
-    font-size: 18px !important;
-    position: relative;
-    left: 65%;
-    transform: translate(80%, -200%);
-  }
-  /* Tablet - Style for Call to Action Component */
-  .cta-container {
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  .cta-title {
-    color: black !important;
-    font-size: 20px !important;
-  }
-  .cta-container h4 {
-    font-size: 18px !important;
-  }
-  .cta-btn {
-    width: 25% !important;
-    font-size: 18px !important;
-  }
-  /* Tablet - Style for Testimonial Slider Component */
-  .testimonial-title {
-    color: black !important;
-    text-align: center;
-    margin: 10px;
-  }
-  .testimonial-sub-title {
-    color: black !important;
-    text-align: center;
-    margin: 0;
-  }
-  .testimonial-slider {
-    width: 100%;
-  }
-  .testimonial-card {
-    max-width: 350px;
-    padding: 30px;
-    margin: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  .testimonial-icon img {
-    max-width: 10%;
-  }
-  .testimonial-image img {
-    border-radius: 50%;
-    max-width: 35%;
-    margin: 15px auto;
-  }
-  .testimonial-text {
-    min-height: 220px;
-  }
-  .testimonial-name {
-    text-align: center;
-  }
-  /* Tablet - Repeated Classes & Styles */
-  .title-text {
-    color: white;
-    font-weight: 800;
-    font-size: 35px;
-  }
-  .sub-title-text {
-    color: white;
-    font-weight: 800;
-    font-size: 25px;
-  }
-  .lrg-white-btn {
-    margin: 10px;
-    width: 20%;
-    height: 55px;
-    font-size: 20px;
-    font-weight: 600;
-    background: white;
-    color: grey;
-    border: 1px solid grey;
-    border-radius: 5px;
-    transition: 0.3s ease all;
-  }
-  .lrg-white-btn:hover {
-    background: grey;
-    color: white;
-    transition: 0.3s ease all;
-    cursor: pointer;
-  }
+h3 {
+  font-size: 18px;
+}
+button {
+  margin: 10px;
+  width: 20%;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 600;
+  background: white;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+}
+button:hover {
+  background: grey;
+  color: white;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+input {
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: grey;
+  border: 1px solid grey;
+  text-align: center;
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+/********************************* Mobile First Styles ******************************************/
+/* Mobile - Styles for Hero Component */
+.hero-container {
+  width: 100%;
+}
+.hero-title-text {
+  position: absolute;
+  top: 1%;
+  left: 33%;
+  transform: translate(-50%, 50%);
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+.hero-sub-title-text {
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.hero-video {
+  margin: auto;
+  display: block;
+  width: 98%;
+  height: 250px;
+  border-radius: 5px;
+}
+/* Mobile - Styles for Search Bar Component */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar-text {
+  width: 90%;
+  height: 45px;
+}
+/* Mobile - Styles for Blogs Component */
+.blogs-container {
+  width: 100%;
+}
+.blog-title,
+.blog-sub-title {
+  margin: 12px;
+  text-align: center;
+}
+.blog-posts {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.blog {
+  width: 100%;
+}
+.blog-image {
+  width: 90%;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+}
+.blog-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.blog-link-text {
+  padding-bottom: 30px;
+}
+.blog-link-text:hover {
+  padding-bottom: 30px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.blog-btn {
+  display: block;
+  margin: auto;
+  width: 35%;
+}
+/* Mobile - Styles for Listings Component */
+.listings-container {
+  margin: 35px;
+  padding-bottom: 25px;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.listings-title,
+.listings-sub-title {
+  text-align: center;
+}
+.listings-box {
+  width: 95%;
+  margin: auto;
+  display: block;
 }

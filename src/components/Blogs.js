@@ -3,8 +3,8 @@ import data from "../data";
 export default function Blogs() {
   return (
     <div className="blogs-container">
-      <h2 className="blog-title title-text">{data.blogTitle}</h2>
-      <h3 className="blog-sub-title sub-title-text">{data.blogSubTitle}</h3>
+      <h2 className="blog-title">{data.blogTitle}</h2>
+      <h3 className="blog-sub-title">{data.blogSubTitle}</h3>
       <div className="blog-posts">
         <div className="blog">
           <img
@@ -31,7 +31,7 @@ export default function Blogs() {
           <h3 className="blog-link-text">Family Friendly Cities</h3>
         </div>
       </div>
-      <button className="blog-btn lrg-white-btn">{data.blogBtnText}</button>
+      <button className="blog-btn">{data.blogBtnText}</button>
     </div>
   );
 }

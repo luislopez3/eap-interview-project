@@ -11,7 +11,7 @@ import TestimonialSlider from "./components/TestimonialSlider";
 
 export default function App() {
   return (
-    <>
+    <main>
       {/* Header */}
       <Hero />
       <SearchBar />
@@ -23,6 +23,6 @@ export default function App() {
       <CallToAction />
       <TestimonialSlider />
       {/* Footer */}
-    </>
+    </main>
   );
 }

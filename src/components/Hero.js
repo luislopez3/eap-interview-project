@@ -7,10 +7,10 @@ export default function Hero() {
         src={data.settingsMediaPrimaryImage}
         alt="Hero Section Background"
       ></img>
-      <h1 className="hero-title-text title-text">{data.settingsTitle}</h1>
-      <h2 className="hero-sub-title-text sub-title-text">
+      <h2 className="hero-title-text">{data.settingsTitle}</h2>
+      <h3 className="hero-sub-title-text">
         {data.settingsSubTitle}
-      </h2>
+      </h3>
       <iframe
         className="hero-video"
         src={data.settingsAgentVideo}
