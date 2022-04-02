@@ -271,15 +271,12 @@ img {
 /********************************* Tablet View Styles ******************************************/
 @media only screen and (min-width: 600px) {
   /* Tablet - Styles for Hero Component */
-
   .hero-title-text {
-    position: absolute;
     top: 1%;
     left: 30%;
     font-size: 35px;
   }
   .hero-sub-title-text {
-    position: absolute;
     top: 9%;
     left: 22%;
     font-size: 25px;
@@ -347,5 +344,181 @@ img {
   }
   .testimonial-text {
     min-height: 120px;
+  }
+}
+/********************************* Desktop Styles ******************************************/
+@media only screen and (min-width: 992px) {
+  /* Desktop - Styles for Hero Component */
+  .hero-title-text {
+    top: 5%;
+    left: 25%;
+    font-size: 50px;
+  }
+  .hero-sub-title-text {
+    top: 15%;
+    left: 20%;
+    font-size: 40px;
+  }
+  .hero-video {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  /* Desktop - Styles for Search Bar Component same as mobile view */
+  /* Desktop - Styles for Blogs Component */
+  .blog-title {
+    margin: 20px;
+    font-size: 45px;
+  }
+  .blog-sub-title {
+    margin: 20px;
+    font-size: 35px;
+  }
+  .blog-posts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .blog-image {
+    width: 95%;
+    opacity: 0.3;
+  }
+  .blog-image:hover {
+    opacity: 1;
+  }
+  .blog-link-text {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -55%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 33px;
+    font-weight: 900;
+  }
+  .blog-link-text:hover {
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .blog-btn {
+    width: 20%;
+  }
+  /* Desktop - Styles for Listings Component */
+  .listings-container {
+    width: 90%;
+  }
+  .listings-container h2 {
+    font-size: 45px;
+  }
+  .listings-container h3 {
+    font-size: 35px;
+  }
+  /* Desktop - Styles for Form Component */
+  .form-title {
+    font-size: 45px;
+  }
+  .form-sub-title {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  .form-container {
+    padding-bottom: 60px;
+    width: 60%;
+  }
+  .form-name {
+    width: 46%;
+  }
+  .form-email {
+    width: 95%;
+  }
+  .form-comments {
+    margin-right: 20px auto;
+    width: 95%;
+  }
+  .form-checkbox {
+    font-size: 20px;
+  }
+  .fieldset-content {
+    font-size: 20px;
+  }
+  .dropdown-content {
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
+  }
+  .form-submit-btn {
+    width: 25%;
+  }
+  /* Desktop - Styles for Info Component */
+  .info-container {
+    width: 95%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .info-image {
+    width: 300px;
+  }
+  .info-text {
+    width: 300px;
+    min-height: 175px;
+  }
+  .info-btn {
+    width: 60%;
+  }
+  /* Desktop - Styles for About Component */
+  .about-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .about-left-side {
+    width: 60%;
+  }
+  .about-left-side > h2 {
+    font-size: 35px;
+    text-align: left;
+  }
+  .about-left-side > h4 {
+    width: 600px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .about-right-side {
+    width: 30%;
+    text-align: right;
+  }
+  .about-btn {
+    width: 60%;
+  }
+  /* Desktop - Styles for Call to Action Component */
+  .cta-container {
+    width: 60%;
+  }
+  .cta-container h2 {
+    font-size: 35px;
+  }
+  .cta-container h4 {
+    font-size: 20px;
+  }
+  .cta-btn {
+    width: 25%;
+  }
+  /* Desktop - Styles for Testimonials Component */
+  .testimonial-title {
+    font-size: 45px;
+  }
+  .testimonial-sub-title {
+    font-size: 25px;
+  }
+  .testimonial-slider {
+    width: 95%;
+  }
+  .testimonial-card {
+    max-width: 350px;
   }
 }

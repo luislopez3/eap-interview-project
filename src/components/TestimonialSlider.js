@@ -3,8 +3,8 @@ import quotes from "../images/quotes.svg";
 export default function TestimonialSlider() {
   return (
     <>
-      <h2 className="testimonial-title title-text">Testimonials</h2>
-      <h3 className="testimonial-sub-title sub-title-text">
+      <h2 className="testimonial-title">Testimonials</h2>
+      <h3 className="testimonial-sub-title">
         See what recent homebuyers are saying about us!
       </h3>
       <div className="testimonial-slider">
