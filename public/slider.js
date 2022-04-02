@@ -2,31 +2,10 @@
 var $;
 $(document).ready(function () {
   $(".testimonial-slider").slick({
-    infinite: true,
     dots: true,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 250,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    infinite: true,
+    speed: 300,
+    centerMode: true,
+    variableWidth: true,
   });
 });

@@ -268,3 +268,68 @@ img {
 .testimonial-name {
   text-align: center;
 }
+/********************************* Tablet View Styles ******************************************/
+@media only screen and (min-width: 600px) {
+  /* Tablet - Styles for Hero Component */
+
+  .hero-title-text {
+    position: absolute;
+    top: 1%;
+    left: 30%;
+    font-size: 35px;
+  }
+  .hero-sub-title-text {
+    position: absolute;
+    top: 9%;
+    left: 22%;
+    font-size: 25px;
+  }
+  .hero-video {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    border-radius: 5px;
+  }
+  /* Tablet - Styles for Search Bar Component same as mobile view */
+  /* Tablet - Styles for Blogs Component same as mobile view */
+  /* Tablet - Styles for Listings Component same as mobile view */
+  /* Tablet - Styles for Form Component */
+  .form-name {
+    width: 46%;
+  }
+  .form-comments {
+    font-size: 20px !important;
+  }
+  .form-checkbox {
+    font-size: 20px;
+  }
+  .fieldset-content {
+    font-size: 20px;
+    width: 95%;
+  }
+  .dropdown-content {
+    font-size: 20px;
+    width: 40%;
+    height: 45px;
+  }
+  /* Tablet - Styles for Info Component */
+  .info-image {
+    width: 45%;
+  }
+  /* Tablet - Styles for About Component same as mobile view */
+  /* Tablet - Styles for Call to Action Component same as mobile view */
+  /* Tablet - Styles for Testimonials Component */
+  .testimonial-sub-title {
+    margin: 0;
+  }
+  .testimonial-slider {
+    width: 85%;
+  }
+  .testimonial-card {
+    max-width: 290px;
+  }
+  .testimonial-text {
+    min-height: 120px;
+  }
+}
