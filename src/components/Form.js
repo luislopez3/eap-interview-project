@@ -158,7 +158,7 @@ export default function Form() {
         <br />
         <br />
         <br />
-        <button className="form-submit-btn lrg-white-btn">Submit</button>
+        <button className="form-submit-btn">Submit</button>
       </form>
     </>
   );

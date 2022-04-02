@@ -16,12 +16,15 @@ main {
 h2,
 h3 {
   color: black;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 23px;
   text-align: center;
 }
 h3 {
   font-size: 18px;
+}
+h4 {
+  font-weight: 300;
 }
 button {
   margin: 10px;
@@ -41,7 +44,8 @@ button:hover {
   transition: 0.3s ease all;
   cursor: pointer;
 }
-input, textarea {
+input,
+textarea {
   border-radius: 5px;
   font-weight: 500;
   font-size: 18px;
@@ -101,6 +105,7 @@ img {
 /* Mobile - Styles for Blogs Component */
 .blogs-container {
   width: 100%;
+  text-align: center;
 }
 .blog-title,
 .blog-sub-title {
@@ -108,8 +113,6 @@ img {
 }
 .blog-posts {
   width: 100%;
-  text-align: center;
-  display: block;
 }
 .blog {
   width: 100%;
@@ -133,8 +136,6 @@ img {
   text-decoration: underline;
 }
 .blog-btn {
-  display: block;
-  margin: auto;
   width: 35%;
 }
 /* Mobile - Styles for Listings Component */
@@ -147,8 +148,8 @@ img {
 }
 .listings-box {
   width: 95%;
-  margin: auto;
   display: block;
+  margin: auto;
 }
 /* Mobile - Styles for Form Component */
 .form-title,
@@ -157,7 +158,7 @@ img {
   padding-bottom: 8px;
 }
 .form-container {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   width: 85%;
 }
 .form-name {
@@ -196,4 +197,74 @@ img {
   width: 30%;
   display: block;
   margin: auto;
+}
+/* Mobile - Styles for Info Component */
+.info-container {
+  width: 85%;
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.info-image {
+  width: 65%;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.info-text {
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 28px;
+}
+.info-btn {
+  width: 35%;
+}
+/* Mobile - Styles for About Component */
+.about-container {
+  width: 70%;
+  text-align: center;
+}
+.about-btn {
+  width: 50%;
+}
+/* Mobile - Styles for Call to Action Component */
+.cta-container {
+  width: 70%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.cta-btn {
+  width: 55%;
+}
+/* Mobile - Styles for Testimonials Component */
+.testimonial-sub-title {
+  margin: 0;
+}
+.testimonial-slider {
+  width: 70%;
+}
+.testimonial-card {
+  max-width: 350px;
+  padding: 30px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.testimonial-card:hover {
+  cursor: pointer;
+}
+.testimonial-icon img {
+  max-width: 10%;
+}
+.testimonial-image img {
+  border-radius: 50%;
+  max-width: 35%;
+  margin: 15px auto;
+}
+.testimonial-text {
+  min-height: 80px;
+}
+.testimonial-name {
+  text-align: center;
 }

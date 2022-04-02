@@ -3,20 +3,25 @@ var $;
 $(document).ready(function () {
   $(".testimonial-slider").slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
-        breakpoint: 769,
+        breakpoint: 250,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 750,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
