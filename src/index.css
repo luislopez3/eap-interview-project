@@ -292,8 +292,17 @@ img {
     border-radius: 5px;
   }
   /* Tablet - Styles for Search Bar Component same as mobile view */
-  /* Tablet - Styles for Blogs Component same as mobile view */
-  /* Tablet - Styles for Listings Component same as mobile view */
+  /* Tablet - Styles for Blogs Component */
+  .blog-image {
+    width: 70%;
+  }
+  /* Tablet - Styles for Listings Component */
+  .listings-container {
+    width: 70%;
+  }
+  .listings-box {
+    width: 90%;
+  }
   /* Tablet - Styles for Form Component */
   .form-name {
     width: 46%;
@@ -314,6 +323,13 @@ img {
     height: 45px;
   }
   /* Tablet - Styles for Info Component */
+  .info-container {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+  }
   .info-image {
     width: 45%;
   }
