@@ -8,9 +8,7 @@ export default function Hero() {
         alt="Hero Section Background"
       ></img>
       <h2 className="hero-title-text">{data.settingsTitle}</h2>
-      <h3 className="hero-sub-title-text">
-        {data.settingsSubTitle}
-      </h3>
+      <h3 className="hero-sub-title-text">{data.settingsSubTitle}</h3>
       <iframe
         className="hero-video"
         src={data.settingsAgentVideo}
