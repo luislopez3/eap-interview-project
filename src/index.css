@@ -360,11 +360,11 @@ img {
     font-size: 40px;
   }
   .hero-video {
-    width: 50%;
-    height: 50%;
+    width: 550px;
+    height: 275px;
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 35%;
+    left: 43%;
   }
   /* Desktop - Styles for Search Bar Component same as mobile view */
   /* Desktop - Styles for Blogs Component */
